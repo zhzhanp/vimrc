@@ -4,6 +4,7 @@ nmap <F7> :tabp<CR>
 nmap <F8> :tabn<CR>
 imap <F2> import pdb;pdb.set_trace()
 call plug#begin('~/.vim/plugged')
+Plug 'jiangmiao/auto-pairs'
 
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'python-mode/python-mode', { 'branch': 'develop' }
