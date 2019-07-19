@@ -5,9 +5,12 @@ nmap <F8> :tabn<CR>
 imap <F2> import pdb;pdb.set_trace()
 nmap J 5j
 nmap K 5k
+nmap <C-c> :source ~/.vimrc<CR>
 map <C-n> :NERDTreeToggle<CR>
 set statusline+=%F
-set nocompatible              " be iMproved, required
+nmap SS :w<CR>
+nmap QQ :q<CR>
+nmap SQ :wq<CR>
 filetype off                  " required
 
 " set the untime path to include Vundle and initialize
@@ -49,3 +52,6 @@ let g:pymode_python = 'python3'
 let g:pymode_rope_completion = 1
 let g:pymode_rope_complete_on_dot = 1
 let g:pymode_rope_completion_bind = '<C-R>'
+let g:pymode_doc = 0
+
+
