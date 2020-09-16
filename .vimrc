@@ -13,6 +13,8 @@ nmap SS :w<CR>
 nmap QQ :q<CR>
 let mapleader=" "
 nmap <leader>t :RangerNewTab<CR>
+nmap <leader>gt :YcmCompleter GoTo<CR>
+nmap <leader>gr :YcmCompleter GoToReferences<CR>
 nmap SQ :wq<CR>
 nmap <F3> <Plug>MarkdownPreview<CR>
 set expandtab
@@ -20,7 +22,7 @@ set shiftwidth=4
 set tabstop=4
 set noswapfile
 filetype off                  " required
-
+syntax on
 " set the untime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -41,6 +43,7 @@ Plugin 'iamcco/mathjax-support-for-mkdp'
 Plugin 'iamcco/markdown-preview.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " On-demand loading
 Plugin 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
