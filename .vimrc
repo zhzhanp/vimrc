@@ -58,7 +58,7 @@ filetype plugin indent on    " required
 
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<F10>"
+let g:UltiSnipsExpandTrigger="<c-c>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
